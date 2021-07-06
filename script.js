@@ -131,7 +131,10 @@ function displayWeather(e){
 
     })
     .catch((err) => {
-        alert("Please Enter a valid city!")
+
+        alert("Please Enter  a valid city!")
+        
+
     });
 
 }
