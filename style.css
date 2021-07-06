@@ -34,6 +34,7 @@ body{
     letter-spacing: 0.4px;
     color: #0e153a;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 .box .icon{
     position: absolute;
@@ -49,10 +50,12 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    border-radius: 3px;
 }
 .form input{
-    width: 230px;
+    width: 160px;
     font-size: 16px;
     font-weight: 500;
     color: #000;
@@ -60,15 +63,26 @@ body{
     font-family: "poppins",sans-serif;
     border: none;
     outline: none;
-    border-radius: 3px;
     text-transform: capitalize;
+    background-color: transparent;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-top: 10px;
 }
-::placeholder{
-    color: #fff;
+.form button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
+.form img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 #header_img img{
     width: 100%;
     margin-top: 50px;
@@ -117,6 +131,6 @@ body{
 @media(max-width:768px){
     .container{
         width: 335px;
-        margin: 25px auto;
+        margin: 20px auto;
     }
 }
