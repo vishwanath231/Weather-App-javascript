@@ -1,0 +1,1 @@
+<h1 align="center">Weather App javascript</h1>

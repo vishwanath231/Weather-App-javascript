@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="title" onclick="refreshPage();">Weather App</div>
+            <form id="form" class="form">
+                <input type="text" id="filterInput" placeholder="Enter the City...">
+            </form>
+            <div id="header_img">
+                <img src="img/home.svg" alt="">
+            </div>
+            <div class="icon" id="icon"></div>
+            <div class="displayDetail">
+                <div id="des" style="color: #ff304f; font-size: 16px;"></div>
+                <span id="place"></span>
+                <span id="country"></span>
+                <div id="date"></div>
+            </div>
+            <div class="displayWeather">
+                <div class="display_div">
+                    <span id="temp"></span>
+                </div>
+                <div class="display_div">
+                    <span id="clouds"></span>
+                </div>
+                <div class="display_div">
+                    <span id="humidity"></span>
+                </div>
+                <div class="display_div">
+                    <span id="pressure"></span>
+                </div>
+                <div class="display_div">
+                    <span id="windDirection"></span>
+                </div>
+                <div class="display_div">
+                    <span id="windSpeed"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
