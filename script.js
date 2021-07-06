@@ -40,6 +40,8 @@ function displayWeather(e){
     .then((res)=> res.json())
     .then((data)=> {
 
+        document.querySelector(".displayWeather").style.margin = "40px 20px 20px 20px"
+
         var id = data['weather'][0]['id'];
         var des = data['weather'][0]['description'];
         var placeValue = data['name'];
